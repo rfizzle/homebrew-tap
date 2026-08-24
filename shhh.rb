@@ -5,21 +5,21 @@
 class Shhh < Formula
   desc "Natural language to shell commands"
   homepage "https://github.com/rfizzle/shhh"
-  version "0.3.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rfizzle/shhh/releases/download/v0.3.0/shhh_0.3.0_darwin_amd64.tar.gz"
-      sha256 "48cea6f5a8201e2b4c589f135775d2e413c93d01757753cec78363bf4bfa7a4f"
+      url "https://github.com/rfizzle/shhh/releases/download/v0.5.0/shhh_0.5.0_darwin_amd64.tar.gz"
+      sha256 "06e83f43f4ea9e4f4dc99bccf0d4d01643c1bd9e2ff6844d514f76cbb7c3e589"
 
       define_method(:install) do
         bin.install "shhh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rfizzle/shhh/releases/download/v0.3.0/shhh_0.3.0_darwin_arm64.tar.gz"
-      sha256 "77f1b58ebce9a526ce1c629fbcff532fa05331e3b78224c4b76e0e3d70a14a26"
+      url "https://github.com/rfizzle/shhh/releases/download/v0.5.0/shhh_0.5.0_darwin_arm64.tar.gz"
+      sha256 "97e38d0796b001e988533953123bd4594d39b78c7f3cf2bec84001d67b99f687"
 
       define_method(:install) do
         bin.install "shhh"
@@ -29,15 +29,15 @@ class Shhh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rfizzle/shhh/releases/download/v0.3.0/shhh_0.3.0_linux_amd64.tar.gz"
-      sha256 "a553a1493d4e4ae58f910aea0d600739d060e228bb7b2bd2a4c406033017c473"
+      url "https://github.com/rfizzle/shhh/releases/download/v0.5.0/shhh_0.5.0_linux_amd64.tar.gz"
+      sha256 "a011ec58a3e700141d256fa001f3dd97a8da38fc6c512b2f4608ca4edfdc112d"
       define_method(:install) do
         bin.install "shhh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rfizzle/shhh/releases/download/v0.3.0/shhh_0.3.0_linux_arm64.tar.gz"
-      sha256 "d1df65857db13c276a79258d044f4826d01fec7beef3af3b24b34af72c3e0c41"
+      url "https://github.com/rfizzle/shhh/releases/download/v0.5.0/shhh_0.5.0_linux_arm64.tar.gz"
+      sha256 "4f9ee1bfb4ab294d17d37860e6f65bcece68c8fe9d3be434a26a6d365cc67415"
       define_method(:install) do
         bin.install "shhh"
       end
