@@ -5,21 +5,21 @@
 class Shhh < Formula
   desc "Natural language to shell commands"
   homepage "https://github.com/rfizzle/shhh"
-  version "0.11.10"
+  version "0.11.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rfizzle/shhh/releases/download/v0.11.10/shhh_0.11.10_darwin_amd64.tar.gz"
-      sha256 "250a014040852c9507976afbab3cb8615e250ebd8a5096d646784cccbd301b68"
+      url "https://github.com/rfizzle/shhh/releases/download/v0.11.11/shhh_0.11.11_darwin_amd64.tar.gz"
+      sha256 "964d6afaeb41e2a4252917df5151693e5755781f8da9b42b96777224d79879d8"
 
       define_method(:install) do
         bin.install "shhh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rfizzle/shhh/releases/download/v0.11.10/shhh_0.11.10_darwin_arm64.tar.gz"
-      sha256 "737eac0519514a5202b77592ee9785f0afefd159655296d60257bd8137c9f96a"
+      url "https://github.com/rfizzle/shhh/releases/download/v0.11.11/shhh_0.11.11_darwin_arm64.tar.gz"
+      sha256 "2f30e8493a306fe0bb68edcaa24d95847ef6a008f157a1988520fee2cbfe5837"
 
       define_method(:install) do
         bin.install "shhh"
@@ -29,15 +29,15 @@ class Shhh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rfizzle/shhh/releases/download/v0.11.10/shhh_0.11.10_linux_amd64.tar.gz"
-      sha256 "c163517be90832a087f652fc07b039d82dc8384c06e83356cb7049e656f03397"
+      url "https://github.com/rfizzle/shhh/releases/download/v0.11.11/shhh_0.11.11_linux_amd64.tar.gz"
+      sha256 "75492e31c27d2f419c6c4ef2de9b2a8a212a6e7f040290eaa286743e3c1b25d2"
       define_method(:install) do
         bin.install "shhh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rfizzle/shhh/releases/download/v0.11.10/shhh_0.11.10_linux_arm64.tar.gz"
-      sha256 "90d45c38c38df3372cf21f28134fa66d590d9e973f1d43bf6c3d5247069af0db"
+      url "https://github.com/rfizzle/shhh/releases/download/v0.11.11/shhh_0.11.11_linux_arm64.tar.gz"
+      sha256 "041b30def035f66b379adc33741927855f6c3f0df452b5ef6401b5d75086f287"
       define_method(:install) do
         bin.install "shhh"
       end
